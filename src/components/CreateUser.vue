@@ -46,6 +46,7 @@ watch(
   currentAnswer,
   (newValue) => {
     if (newValue) {
+      image.value = newValue.image;
       formData.id = newValue.id || "";
       formData.firstName = newValue.firstName || "";
       formData.lastName = newValue.lastName || "";
